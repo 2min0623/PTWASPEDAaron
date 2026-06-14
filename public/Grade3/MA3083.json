@@ -31,6 +31,12 @@
                 "Data": {
                   "Src": "soy.png"
                 }
+              },
+              {
+                "Name": "ImageContainer",
+                "Data": {
+                  "Src": "orange.png"
+                }
               }
             ],
             [
@@ -54,6 +60,13 @@
                   "Scale": "250",
                   "Ml": "170"
                 }
+              },
+              {
+                "Name": "WaterDisplay",
+                "Data": {
+                  "Scale": "250",
+                  "Ml": "210"
+                }
               }
             ]
           ]
@@ -70,6 +83,10 @@
           [
             [0, 2],
             [1, 2]
+          ],
+          [
+            [0, 3],
+            [1, 3]
           ]
         ]
       },
