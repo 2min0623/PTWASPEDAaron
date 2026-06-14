@@ -390,6 +390,7 @@ export default {
     },
     MarkWrongLine(lineIndex) {
       this.Lines[lineIndex].stroke = "red";
+      this.Lines[lineIndex].strokeWidth = 6;
       this.$refs.LineLayer.getNode().draw();
     },
     CheckAllAnswered() {
