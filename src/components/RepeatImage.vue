@@ -1,11 +1,12 @@
 ﻿<template>
-  <div class="repeat-image-container" :style="gridStyle">
+  <div class="repeat-image-container" :style="containerStyle" ref="container">
     <img
       v-for="index in count"
       :key="index"
       :src="imageUrl"
       :alt="componentConfig.Alt"
       class="repeated-image"
+      :style="imageStyle"
     />
   </div>
 </template>
@@ -29,25 +30,36 @@ export default {
       count: this.componentConfig.Count,
       imageUrl: getGameAssets(this.gameId, this.componentConfig.Src),
       columns: 0,
+      imageSize: 80,
+      containerWidth: 0,
+      containerHeight: 0,
     };
   },
   computed: {
-    gridStyle() {
-      const columns = this.calculateColumns();
-      const effectiveColumns = Math.min(columns, this.count);
+    effectiveColumns() {
+      return Math.min(this.calculateColumns(), this.count);
+    },
+    effectiveRows() {
+      return Math.ceil(this.count / this.effectiveColumns);
+    },
+    containerStyle() {
       return {
-        gridTemplateColumns: `repeat(${effectiveColumns}, 1fr)`,
+        gridTemplateColumns: `repeat(${this.effectiveColumns}, 1fr)`,
+      };
+    },
+    imageStyle() {
+      return {
+        width: `${this.imageSize}px`,
+        height: `${this.imageSize}px`,
       };
     },
   },
-  beforeMount() {
-    try {
-      this.columns = this.calculateColumns();
-      console.log(this.columns);
-    } catch (error) {
-      console.warn("計算列數時發生錯誤：", error);
-      this.columns = 10;
-    }
+  mounted() {
+    this.calculateOptimalSize();
+    window.addEventListener("resize", this.calculateOptimalSize);
+  },
+  beforeUnmount() {
+    window.removeEventListener("resize", this.calculateOptimalSize);
   },
   methods: {
     calculateColumns() {
@@ -60,6 +72,28 @@ export default {
         }
       }
       return 10;
+    },
+    calculateOptimalSize() {
+      if (!this.$refs.container) return;
+
+      const container = this.$refs.container;
+      const maxWidth = container.offsetWidth || window.innerWidth * 0.9;
+      const maxHeight = 300; // 限制最大高度
+
+      const gap = 8; // gap 的大小（$gap--tiny）
+      const padding = 16; // padding 的大小（$padding--small）
+
+      // 計算可用空間
+      const availableWidth = maxWidth - padding * 2 - (this.effectiveColumns - 1) * gap;
+      const availableHeight = maxHeight - padding * 2 - (this.effectiveRows - 1) * gap;
+
+      // 根據寬度和高度計算最優的圖片大小
+      const sizeByWidth = Math.floor(availableWidth / this.effectiveColumns);
+      const sizeByHeight = Math.floor(availableHeight / this.effectiveRows);
+
+      // 取較小的值以確保不超出容器
+      this.imageSize = Math.min(sizeByWidth, sizeByHeight, 200); // 最大限制200px
+      this.imageSize = Math.max(this.imageSize, 40); // 最小限制40px
     },
   },
 };
@@ -79,8 +113,6 @@ export default {
 }
 
 .repeated-image {
-  width: 80px;
-  height: 80px;
   min-width: 0;
   min-height: 0;
   object-fit: contain;
