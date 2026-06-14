@@ -236,7 +236,9 @@ export default {
       const wrongFinal = new Set();
 
       Object.keys(this.userAnswers).forEach((indexStr) => {
-        if (!this.isAnswerCorrect(indexStr)) {
+        const answer = this.userAnswers[indexStr];
+        // 如果為空值或答案錯誤，標記為錯誤
+        if (!this.isValidAnswer(answer) || !this.isAnswerCorrect(indexStr)) {
           wrongEq.add(Number(indexStr));
         }
       });
@@ -245,9 +247,10 @@ export default {
       finalPositions.forEach((pos, i) => {
         const answer = (this.finalAnswers[pos] || "").toString().trim();
         const correct = (this.componentConfig.finalAnswers?.[i] || "").toString();
-        const isCorrect = !isNaN(correct)
+        // 如果為空值或答案錯誤，標記為錯誤
+        const isCorrect = answer !== "" && (!isNaN(correct)
           ? Number(answer) === Number(correct)
-          : answer === correct;
+          : answer === correct);
         if (!isCorrect) wrongFinal.add(String(pos));
       });
 
