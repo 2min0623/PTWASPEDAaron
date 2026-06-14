@@ -245,12 +245,17 @@ export default {
 
       const finalPositions = this.getFinalInputPositions();
       finalPositions.forEach((pos, i) => {
-        const answer = (this.finalAnswers[pos] || "").toString().trim();
+        const answer = this.finalAnswers[pos];
         const correct = (this.componentConfig.finalAnswers?.[i] || "").toString();
         // 如果為空值或答案錯誤，標記為錯誤
-        const isCorrect = answer !== "" && (!isNaN(correct)
-          ? Number(answer) === Number(correct)
-          : answer === correct);
+        const isAnswerValid = this.isValidAnswer(answer);
+        let isCorrect = false;
+        if (isAnswerValid) {
+          const trimmedAnswer = answer.toString().trim();
+          isCorrect = !isNaN(correct)
+            ? Number(trimmedAnswer) === Number(correct)
+            : trimmedAnswer === correct;
+        }
         if (!isCorrect) wrongFinal.add(String(pos));
       });
 
