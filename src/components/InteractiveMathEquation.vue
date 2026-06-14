@@ -236,11 +236,14 @@ export default {
       const wrongEq = new Set();
       const wrongFinal = new Set();
 
-      Object.keys(this.userAnswers).forEach((indexStr) => {
-        const answer = this.userAnswers[indexStr];
-        // 如果為空值或答案錯誤，標記為錯誤
-        if (!this.isValidAnswer(answer) || !this.isAnswerCorrect(indexStr)) {
-          wrongEq.add(Number(indexStr));
+      // 檢查所有應該有輸入的位置（根據 parsedEquation）
+      this.parsedEquation.forEach((item, index) => {
+        if (item.isInput) {
+          const answer = this.userAnswers[index];
+          // 如果為空值或答案錯誤，標記為錯誤
+          if (!this.isValidAnswer(answer) || !this.isAnswerCorrect(index)) {
+            wrongEq.add(index);
+          }
         }
       });
 
@@ -288,9 +291,13 @@ export default {
 
     isAnswerCorrect(index) {
       const userAnswer = this.userAnswers[index];
-      const answerIndex = Object.keys(this.userAnswers).indexOf(
-        index.toString()
-      );
+      // 根據 parsedEquation 中該位置之前有多少個 isInput 項目來計算 answerIndex
+      let answerIndex = 0;
+      for (let i = 0; i < index; i++) {
+        if (this.parsedEquation[i].isInput) {
+          answerIndex++;
+        }
+      }
       return userAnswer === this.answers[answerIndex];
     },
 
