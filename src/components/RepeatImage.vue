@@ -70,15 +70,17 @@ export default {
   display: grid;
   width: 100%;
   height: auto;
+  max-height: 300px;
   padding: $padding--small;
   box-sizing: border-box;
   gap: $gap--tiny;
   place-items: center;
+  overflow: hidden;
 }
 
 .repeated-image {
-  width: 100%;
-  height: 100%;
+  width: 80px;
+  height: 80px;
   min-width: 0;
   min-height: 0;
   object-fit: contain;
