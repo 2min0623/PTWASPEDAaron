@@ -467,11 +467,10 @@ export default {
       const Column = this.gameData.Question.RowData.length;
 
       // Object Width Occupied 3/5 and Blank Width Occupied 2/5
-      // 放大圖片 - 增加係數從 2.5 到 3.5
       this.ComponentPositionConfig.ObjectWidth =
-        (KonvaBorder.width / (Column * 3.5 + (Column - 1) * 2.5)) * 3.5;
+        (KonvaBorder.width / (Column * 2.5 + (Column - 1) * 2.5)) * 2.5 * 1.3;
       this.ComponentPositionConfig.BlankWidth =
-        (KonvaBorder.width / (Column * 3.5 + (Column - 1) * 2.5)) * 2.5;
+        (KonvaBorder.width / (Column * 2.5 + (Column - 1) * 2.5)) * 2.5;
 
       //Config each Object Position
       let NowX = 0;
@@ -484,10 +483,9 @@ export default {
         const ColumnObjectAmount =
           this.gameData.Question.RowData[ColumnIndex].length;
         // Whe we calculate each object's heght, we add MiniGap at the top and bottom of the column
-        // 放大圖片高度 - 增加 1.4 倍
         this.ComponentPositionConfig.ObjectHeight =
           ((KonvaBorder.height - this.MiniGap * (ColumnObjectAmount + 1)) /
-            ColumnObjectAmount) * 1.4;
+          ColumnObjectAmount) * 1.3;
         let NowY = this.MiniGap;
         for (const ObjectInfo in this.gameData.Question.RowData[ColumnIndex]) {
           const Object = {};
@@ -562,11 +560,6 @@ export default {
 </script>
 <style scoped lang="scss">
 /* Your component-specific styles go here */
-.h1 {
-  font-size: calc($text-large * 2 / 3);
-  margin: 0.5rem 0;
-}
-
 .Container {
   width: 100%;
   max-height: 65vh;
