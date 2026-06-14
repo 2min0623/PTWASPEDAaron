@@ -468,7 +468,7 @@ export default {
 
       // Object Width Occupied 3/5 and Blank Width Occupied 2/5
       this.ComponentPositionConfig.ObjectWidth =
-        (KonvaBorder.width / (Column * 2.5 + (Column - 1) * 2.5)) * 2.5 * 1.3;
+        (KonvaBorder.width / (Column * 2.5 + (Column - 1) * 2.5)) * 2.5;
       this.ComponentPositionConfig.BlankWidth =
         (KonvaBorder.width / (Column * 2.5 + (Column - 1) * 2.5)) * 2.5;
 
@@ -484,8 +484,8 @@ export default {
           this.gameData.Question.RowData[ColumnIndex].length;
         // Whe we calculate each object's heght, we add MiniGap at the top and bottom of the column
         this.ComponentPositionConfig.ObjectHeight =
-          ((KonvaBorder.height - this.MiniGap * (ColumnObjectAmount + 1)) /
-          ColumnObjectAmount) * 1.3;
+          (KonvaBorder.height - this.MiniGap * (ColumnObjectAmount + 1)) /
+          ColumnObjectAmount;
         let NowY = this.MiniGap;
         for (const ObjectInfo in this.gameData.Question.RowData[ColumnIndex]) {
           const Object = {};
@@ -593,6 +593,7 @@ export default {
 .Component {
   width: 100%;
   height: 100%;
+  transform: scale(1.3);
 }
 .Buttons {
   display: flex;
