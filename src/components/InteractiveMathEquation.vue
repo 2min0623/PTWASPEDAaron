@@ -7,6 +7,7 @@
             <q-btn
               :label="userAnswers[index] || '?'"
               class="interactive-equation__symbol-btn"
+              :class="{ 'interactive-equation__symbol-btn--wrong': wrongEquationInputs.has(index) }"
               rounded
             >
               <q-menu anchor="bottom start" self="top left">
@@ -374,6 +375,11 @@ export default {
     padding: 0;
     min-width: 40px;
     height: 40px;
+
+    &--wrong {
+      border: 2px solid red !important;
+      background-color: #ffe0e0 !important;
+    }
   }
 
   &__text {
