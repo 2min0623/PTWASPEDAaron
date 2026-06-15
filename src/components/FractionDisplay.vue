@@ -55,10 +55,10 @@ export default {
 
 .line {
   display: block;
-  border-top: 0.2rem solid black;
+  border-top: 0.3rem solid black;
   width: 100%;
-  max-width: 150px;
-  margin: 2px 0;
+  max-width: 180px;
+  margin: 4px 0;
 }
 
 .denominator {

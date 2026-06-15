@@ -9,6 +9,7 @@
           :is="gameData.topComponent.Name"
           :component-config="gameData.topComponent.Data"
           :game-id="gameId"
+          :is-wrong="showTopError"
           @reply-answer="topReply"
         ></component>
       </div>
@@ -20,6 +21,7 @@
           :is="gameData.downComponent.Name"
           :component-config="gameData.downComponent.Data"
           :game-id="gameId"
+          :is-wrong="showDownError"
           @reply-answer="downReply"
         ></component>
       </div>
@@ -91,6 +93,8 @@ export default {
       ShowPad: false,
       topComponentsAnswer: false,
       downComponentsAnswer: false,
+      showTopError: false,
+      showDownError: false,
     };
   },
   computed: {},
@@ -181,10 +185,18 @@ export default {
       const ans = this.topComponentsAnswer && this.downComponentsAnswer;
 
       if (ans === true) {
+        this.showTopError = false;
+        this.showDownError = false;
         this.$emit("play-effect", "CorrectSound");
         this.$emit("add-record", ["不支援顯示", "不支援顯示", `正確`]);
         this.$emit("next-question");
       } else {
+        if (this.gameConfig.layout.top && this.gameConfig.checkAnswer.top) {
+          this.showTopError = !this.topComponentsAnswer;
+        }
+        if (this.gameConfig.layout.down && this.gameConfig.checkAnswer.down) {
+          this.showDownError = !this.downComponentsAnswer;
+        }
         this.$emit("play-effect", "WrongSound");
         this.$emit("add-record", ["不支援顯示", "不支援顯示", `錯誤`]);
         emitter.emit("checkAnswer");

@@ -205,9 +205,10 @@ export default {
 .game__drop-area {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(6, 9vh);
+  grid-auto-rows: minmax(9vh, auto);
   gap: 0.5rem;
   padding: $padding--small;
+  overflow: auto;
 }
 
 .game__drag-area {

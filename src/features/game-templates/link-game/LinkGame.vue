@@ -390,6 +390,7 @@ export default {
     },
     MarkWrongLine(lineIndex) {
       this.Lines[lineIndex].stroke = "red";
+      this.Lines[lineIndex].strokeWidth = 6;
       this.$refs.LineLayer.getNode().draw();
     },
     CheckAllAnswered() {
@@ -593,6 +594,7 @@ export default {
 .Component {
   width: 100%;
   height: 100%;
+  transform: scale(1.3);
 }
 .Buttons {
   display: flex;
