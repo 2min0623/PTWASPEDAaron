@@ -1,9 +1,19 @@
 <template>
   <div class="outer-container">
     <div class="title">
-      <TextOnly
-        :component-config="titleConfig"
-      />
+      <div class="title-text">
+        <ruby>共<rt>ㄍㄨㄥˋ</rt></ruby>
+        <ruby>有<rt>ㄧㄡˇ</rt></ruby>
+        <ruby>多<rt>ㄉㄨㄛ</rt></ruby>
+        <ruby>少<rt>ㄕㄠˇ</rt></ruby>
+        <ruby>元<rt>ㄩㄢˊ</rt></ruby>？
+        <ruby>記<rt>ㄐㄧˋ</rt></ruby>
+        <ruby>在<rt>ㄗㄞˋ</rt></ruby>
+        <ruby>定<rt>ㄉㄧㄥˋ</rt></ruby>
+        <ruby>位<rt>ㄨㄟˋ</rt></ruby>
+        <ruby>板<rt>ㄅㄢˇ</rt></ruby>
+        <ruby>上<rt>ㄕㄤˋ</rt></ruby>
+      </div>
     </div>
 
     <div class="game-area">
@@ -47,7 +57,6 @@
 
 <script>
 import NumberBoard from "@/components/NumberBoard.vue";
-import TextOnly from "@/components/TextOnly.vue";
 import { getGameAssets } from "@/lib/get-assets.js";
 import { subComponentsVerifyAnswer as emitter } from "@/lib/mitt.js";
 
@@ -64,7 +73,7 @@ const FILE_EXT = {
 
 export default {
   name: "MA4011",
-  components: { NumberBoard, TextOnly },
+  components: { NumberBoard },
   props: {
     gameData: { type: Object, required: true },
     gameId: { type: String, required: true },
@@ -73,11 +82,6 @@ export default {
   emits: ["play-effect", "next-question", "add-record"],
   data() {
     return {
-      titleConfig: {
-        Text: "共有多少元？記在定位板上",
-        Zhuyin: true,
-        Size: "title-medium",
-      },
       boardConfig: {},
       boardReply: false,
       showSuccessImage: false,
@@ -146,6 +150,21 @@ export default {
     align-items: center;
     background-color: $primary-color;
     padding: $padding--small $padding--medium;
+
+    .title-text {
+      font-size: $text-large;
+      font-weight: $font-bold;
+
+      ruby {
+        ruby-position: over;
+        ruby-align: center;
+      }
+
+      rt {
+        font-size: 0.5em;
+        font-weight: normal;
+      }
+    }
   }
 }
 
