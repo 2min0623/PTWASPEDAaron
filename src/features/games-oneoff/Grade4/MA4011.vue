@@ -2,17 +2,18 @@
   <div class="outer-container">
     <div class="title">
       <div class="title-text">
-        <ruby>共<rt>ㄍㄨㄥˋ</rt></ruby>
-        <ruby>有<rt>ㄧㄡˇ</rt></ruby>
-        <ruby>多<rt>ㄉㄨㄛ</rt></ruby>
-        <ruby>少<rt>ㄕㄠˇ</rt></ruby>
-        <ruby>元<rt>ㄩㄢˊ</rt></ruby>？
-        <ruby>記<rt>ㄐㄧˋ</rt></ruby>
-        <ruby>在<rt>ㄗㄞˋ</rt></ruby>
-        <ruby>定<rt>ㄉㄧㄥˋ</rt></ruby>
-        <ruby>位<rt>ㄨㄟˋ</rt></ruby>
-        <ruby>板<rt>ㄅㄢˇ</rt></ruby>
-        <ruby>上<rt>ㄕㄤˋ</rt></ruby>
+        <div class="char-with-zhuyin">共<span class="zhuyin">ㄍㄨㄥˋ</span></div>
+        <div class="char-with-zhuyin">有<span class="zhuyin">ㄧㄡˇ</span></div>
+        <div class="char-with-zhuyin">多<span class="zhuyin">ㄉㄨㄛ</span></div>
+        <div class="char-with-zhuyin">少<span class="zhuyin">ㄕㄠˇ</span></div>
+        <div class="char-with-zhuyin">元<span class="zhuyin">ㄩㄢˊ</span></div>
+        <div class="char-with-zhuyin">？</div>
+        <div class="char-with-zhuyin">記<span class="zhuyin">ㄐㄧˋ</span></div>
+        <div class="char-with-zhuyin">在<span class="zhuyin">ㄗㄞˋ</span></div>
+        <div class="char-with-zhuyin">定<span class="zhuyin">ㄉㄧㄥˋ</span></div>
+        <div class="char-with-zhuyin">位<span class="zhuyin">ㄨㄟˋ</span></div>
+        <div class="char-with-zhuyin">板<span class="zhuyin">ㄅㄢˇ</span></div>
+        <div class="char-with-zhuyin">上<span class="zhuyin">ㄕㄤˋ</span></div>
       </div>
     </div>
 
@@ -154,15 +155,27 @@ export default {
     .title-text {
       font-size: $text-large;
       font-weight: $font-bold;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 0.1em;
 
-      ruby {
-        ruby-position: over;
-        ruby-align: center;
-      }
+      .char-with-zhuyin {
+        display: inline-block;
+        position: relative;
+        line-height: 1.2;
+        margin-right: 0.3em;
 
-      rt {
-        font-size: 0.5em;
-        font-weight: normal;
+        .zhuyin {
+          font-size: 0.5em;
+          font-weight: normal;
+          position: absolute;
+          top: -0.1em;
+          right: -0.6em;
+          white-space: nowrap;
+          line-height: 1;
+        }
       }
     }
   }
