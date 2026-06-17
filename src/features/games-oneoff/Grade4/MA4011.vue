@@ -162,19 +162,18 @@ export default {
       gap: 0.1em;
 
       .char-with-zhuyin {
-        display: inline-block;
+        display: flex;
+        align-items: center;
         position: relative;
-        line-height: 1.2;
-        margin-right: 0.3em;
+        height: 1.5em;
+        white-space: nowrap;
 
         .zhuyin {
-          font-size: 0.5em;
+          font-size: 0.45em;
           font-weight: normal;
-          position: absolute;
-          top: -0.1em;
-          right: -0.6em;
-          white-space: nowrap;
+          margin-left: 0.1em;
           line-height: 1;
+          flex-shrink: 0;
         }
       }
     }
