@@ -163,18 +163,19 @@ export default {
 
       .char-with-zhuyin {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        gap: 0.05em;
         line-height: 1;
-        word-break: break-all;
 
         .zhuyin {
           font-size: 0.35em;
           font-weight: normal;
-          line-height: 0.9;
-          margin-bottom: 0.1em;
-          width: 1em;
+          line-height: 0.8;
+          display: flex;
+          flex-direction: column;
+          width: 0.5em;
           text-align: center;
+          word-break: break-all;
         }
       }
     }
