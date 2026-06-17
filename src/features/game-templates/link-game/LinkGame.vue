@@ -468,11 +468,12 @@ export default {
       const Column = this.gameData.Question.RowData.length;
 
       // Object Width Occupied 3/5 and Blank Width Occupied 2/5
-      // Enlarged images by factor of 1.3 to improve visibility
+      // Reduce blank width to enlarge image display without exceeding screen
+      const totalRatio = Column * 3 + (Column - 1) * 1.5;
       this.ComponentPositionConfig.ObjectWidth =
-        (KonvaBorder.width / (Column * 2.5 + (Column - 1) * 2.5)) * 2.5 * 1.3;
+        (KonvaBorder.width / totalRatio) * 3;
       this.ComponentPositionConfig.BlankWidth =
-        (KonvaBorder.width / (Column * 2.5 + (Column - 1) * 2.5)) * 2.5;
+        (KonvaBorder.width / totalRatio) * 1.5;
 
       //Config each Object Position
       let NowX = 0;
