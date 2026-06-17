@@ -485,10 +485,10 @@ export default {
         const ColumnObjectAmount =
           this.gameData.Question.RowData[ColumnIndex].length;
         // Whe we calculate each object's heght, we add MiniGap at the top and bottom of the column
-        // Enlarged images by factor of 1.3 to improve visibility
+        // Keep original height to prevent scrollbar overflow
         this.ComponentPositionConfig.ObjectHeight =
-          ((KonvaBorder.height - this.MiniGap * (ColumnObjectAmount + 1)) /
-          ColumnObjectAmount) * 1.3;
+          (KonvaBorder.height - this.MiniGap * (ColumnObjectAmount + 1)) /
+          ColumnObjectAmount;
         let NowY = this.MiniGap;
         for (const ObjectInfo in this.gameData.Question.RowData[ColumnIndex]) {
           const Object = {};
