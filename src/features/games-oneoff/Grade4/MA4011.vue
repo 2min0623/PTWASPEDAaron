@@ -2,18 +2,18 @@
   <div class="outer-container">
     <div class="title">
       <div class="title-text">
-        <div class="char-with-zhuyin">共<span class="zhuyin">ㄍㄨㄥˋ</span></div>
-        <div class="char-with-zhuyin">有<span class="zhuyin">ㄧㄡˇ</span></div>
-        <div class="char-with-zhuyin">多<span class="zhuyin">ㄉㄨㄛ</span></div>
-        <div class="char-with-zhuyin">少<span class="zhuyin">ㄕㄠˇ</span></div>
-        <div class="char-with-zhuyin">元<span class="zhuyin">ㄩㄢˊ</span></div>
+        <div class="char-with-zhuyin">共<div class="zhuyin-group"><span class="zhuyin-char">ㄍ</span><span class="tone">ˋ</span></div><div class="zhuyin-group"><span class="zhuyin-char">ㄨ</span></div></div>
+        <div class="char-with-zhuyin">有<div class="zhuyin-group"><span class="zhuyin-char">ㄧ</span><span class="tone">ˇ</span></div><div class="zhuyin-group"><span class="zhuyin-char">ㄡ</span></div></div>
+        <div class="char-with-zhuyin">多<div class="zhuyin-group"><span class="zhuyin-char">ㄉ</span></div><div class="zhuyin-group"><span class="zhuyin-char">ㄨ</span></div></div>
+        <div class="char-with-zhuyin">少<div class="zhuyin-group"><span class="zhuyin-char">ㄕ</span><span class="tone">ˇ</span></div><div class="zhuyin-group"><span class="zhuyin-char">ㄠ</span></div></div>
+        <div class="char-with-zhuyin">元<div class="zhuyin-group"><span class="zhuyin-char">ㄩ</span><span class="tone">ˊ</span></div><div class="zhuyin-group"><span class="zhuyin-char">ㄢ</span></div></div>
         <div class="char-with-zhuyin">？</div>
-        <div class="char-with-zhuyin">記<span class="zhuyin">ㄐㄧˋ</span></div>
-        <div class="char-with-zhuyin">在<span class="zhuyin">ㄗㄞˋ</span></div>
-        <div class="char-with-zhuyin">定<span class="zhuyin">ㄉㄧㄥˋ</span></div>
-        <div class="char-with-zhuyin">位<span class="zhuyin">ㄨㄟˋ</span></div>
-        <div class="char-with-zhuyin">板<span class="zhuyin">ㄅㄢˇ</span></div>
-        <div class="char-with-zhuyin">上<span class="zhuyin">ㄕㄤˋ</span></div>
+        <div class="char-with-zhuyin">記<div class="zhuyin-group"><span class="zhuyin-char">ㄐ</span><span class="tone">ˋ</span></div><div class="zhuyin-group"><span class="zhuyin-char">ㄧ</span></div></div>
+        <div class="char-with-zhuyin">在<div class="zhuyin-group"><span class="zhuyin-char">ㄗ</span><span class="tone">ˋ</span></div><div class="zhuyin-group"><span class="zhuyin-char">ㄞ</span></div></div>
+        <div class="char-with-zhuyin">定<div class="zhuyin-group"><span class="zhuyin-char">ㄉ</span><span class="tone">ˋ</span></div><div class="zhuyin-group"><span class="zhuyin-char">ㄧ</span></div></div>
+        <div class="char-with-zhuyin">位<div class="zhuyin-group"><span class="zhuyin-char">ㄨ</span><span class="tone">ˋ</span></div><div class="zhuyin-group"><span class="zhuyin-char">ㄟ</span></div></div>
+        <div class="char-with-zhuyin">板<div class="zhuyin-group"><span class="zhuyin-char">ㄅ</span><span class="tone">ˇ</span></div><div class="zhuyin-group"><span class="zhuyin-char">ㄢ</span></div></div>
+        <div class="char-with-zhuyin">上<div class="zhuyin-group"><span class="zhuyin-char">ㄕ</span><span class="tone">ˋ</span></div><div class="zhuyin-group"><span class="zhuyin-char">ㄤ</span></div></div>
       </div>
     </div>
 
@@ -164,18 +164,25 @@ export default {
       .char-with-zhuyin {
         display: flex;
         align-items: center;
-        gap: 0.05em;
-        line-height: 1;
+        gap: 0.1em;
+        line-height: 1.2;
 
-        .zhuyin {
-          font-size: 0.35em;
-          font-weight: normal;
-          line-height: 0.8;
+        .zhuyin-group {
           display: flex;
           flex-direction: column;
-          width: 0.5em;
-          text-align: center;
-          word-break: break-all;
+          align-items: center;
+          gap: 0;
+          font-size: 0.4em;
+          line-height: 0.9;
+
+          .zhuyin-char {
+            font-weight: normal;
+          }
+
+          .tone {
+            font-weight: normal;
+            font-size: 0.9em;
+          }
         }
       }
     }
