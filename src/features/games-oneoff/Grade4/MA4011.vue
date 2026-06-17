@@ -1,7 +1,9 @@
 <template>
   <div class="outer-container">
     <div class="title">
-      <p>共有多少元？記在定位板上</p>
+      <TextOnly
+        :component-config="titleConfig"
+      />
     </div>
 
     <div class="game-area">
@@ -45,6 +47,7 @@
 
 <script>
 import NumberBoard from "@/components/NumberBoard.vue";
+import TextOnly from "@/components/TextOnly.vue";
 import { getGameAssets } from "@/lib/get-assets.js";
 import { subComponentsVerifyAnswer as emitter } from "@/lib/mitt.js";
 
@@ -61,7 +64,7 @@ const FILE_EXT = {
 
 export default {
   name: "MA4011",
-  components: { NumberBoard },
+  components: { NumberBoard, TextOnly },
   props: {
     gameData: { type: Object, required: true },
     gameId: { type: String, required: true },
@@ -70,6 +73,11 @@ export default {
   emits: ["play-effect", "next-question", "add-record"],
   data() {
     return {
+      titleConfig: {
+        Text: "共有多少元？記在定位板上",
+        Zhuyin: true,
+        Size: "title-medium",
+      },
       boardConfig: {},
       boardReply: false,
       showSuccessImage: false,
@@ -135,13 +143,9 @@ export default {
   .title {
     @extend .container-basic;
     justify-content: center;
+    align-items: center;
     background-color: $primary-color;
     padding: $padding--small $padding--medium;
-    p {
-      font-size: $text-large;
-      font-weight: $font-bold;
-      margin: 0;
-    }
   }
 }
 
