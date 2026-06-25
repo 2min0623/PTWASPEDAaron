@@ -1,7 +1,7 @@
 <template>
   <div class="outer-container">
     <div class="title">
-      <p>共有多少元？記在定位板上</p>
+      <p>{{ gameIntroText }}</p>
     </div>
 
     <div class="game-area">
@@ -66,10 +66,12 @@ export default {
     gameData: { type: Object, required: true },
     gameId: { type: String, required: true },
     gameConfig: { type: Object, required: true },
+    introText: { type: Object, default: null },
   },
   emits: ["play-effect", "next-question", "add-record"],
   data() {
     return {
+      gameIntroText: "",
       boardConfig: {},
       boardReply: false,
       showSuccessImage: false,
@@ -78,6 +80,12 @@ export default {
     };
   },
   created() {
+    // 優先使用傳入的 introText prop，其次嘗試從 gameConfig 獲取
+    if (this.introText?.Content) {
+      this.gameIntroText = this.introText.Content;
+    } else if (this.gameConfig?.IntroText?.Content) {
+      this.gameIntroText = this.gameConfig.IntroText.Content;
+    }
     this.boardConfig = {
       Unit: ["萬", "千", "百", "十", "個"],
       Number: this.gameData.answer,
