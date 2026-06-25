@@ -468,10 +468,12 @@ export default {
       const Column = this.gameData.Question.RowData.length;
 
       // Object Width Occupied 3/5 and Blank Width Occupied 2/5
+      // Reduce blank width to enlarge image display without exceeding screen
+      const totalRatio = Column * 3 + (Column - 1) * 1.5;
       this.ComponentPositionConfig.ObjectWidth =
-        (KonvaBorder.width / (Column * 2.5 + (Column - 1) * 2.5)) * 2.5;
+        (KonvaBorder.width / totalRatio) * 3;
       this.ComponentPositionConfig.BlankWidth =
-        (KonvaBorder.width / (Column * 2.5 + (Column - 1) * 2.5)) * 2.5;
+        (KonvaBorder.width / totalRatio) * 1.5;
 
       //Config each Object Position
       let NowX = 0;
@@ -484,6 +486,7 @@ export default {
         const ColumnObjectAmount =
           this.gameData.Question.RowData[ColumnIndex].length;
         // Whe we calculate each object's heght, we add MiniGap at the top and bottom of the column
+        // Keep original height to prevent scrollbar overflow
         this.ComponentPositionConfig.ObjectHeight =
           (KonvaBorder.height - this.MiniGap * (ColumnObjectAmount + 1)) /
           ColumnObjectAmount;
@@ -594,7 +597,6 @@ export default {
 .Component {
   width: 100%;
   height: 100%;
-  transform: scale(1.3);
 }
 .Buttons {
   display: flex;
