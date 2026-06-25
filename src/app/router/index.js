@@ -57,11 +57,8 @@ router.beforeEach((to, from, next) => {
   const normalizeParam = (value) => (Array.isArray(value) ? value[0] : value);
   const grade = parseInt(normalizeParam(to.params.grade), 10);
   const id = parseInt(normalizeParam(to.params.id), 10);
-  if ((!isNaN(grade) && grade > 3) || (!isNaN(id) && id > 3)) {
-    document.body.style.fontFamily = ""; // 當年級或ID大於3時使用默認字體
-  } else {
-    document.body.style.fontFamily = "YuanQuan, sans-serif"; // 其他情況使用YuanQuan字體
-  }
+  // 使用 YuanQuan 字體供所有低年級及自定義遊戲，確保注音顯示正常
+  document.body.style.fontFamily = "YuanQuan, sans-serif";
   next();
 });
 

@@ -62,6 +62,7 @@
                   :game-id="gameID"
                   :game-data="GameData.Questions[Nowlevel - 1]"
                   :game-config="GameConfig"
+                  :intro-text="GameData.IntroText"
                   @get-info="getAllInfo"
                   @add-record="gameDataRecord"
                   @download-data="ToCSV"
