@@ -1,0 +1,1114 @@
+{
+  "id": "MA3092",
+  "introvideo": "",
+  "IntroText": {
+    "Type": "PlainText",
+    "Content": "塗色的部分共是多少?將正確的分數連起來。"
+  },
+  "GameType": "LinkGame",
+  "GameConfig": {},
+  "Hint": {},
+  "Questions": [
+    [
+      {
+        "Question": {
+          "text": "把一樣的數連起來",
+          "RowData": [
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "7 x 8 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "70 x 8 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "700 x 8 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ],
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "5600",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "56",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "560",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ]
+          ]
+        },
+        "Answer": [
+          [
+            [0, 0],
+            [1, 1]
+          ],
+          [
+            [0, 1],
+            [1, 2]
+          ],
+          [
+            [0, 2],
+            [1, 0]
+          ]
+        ]
+      },
+      {
+        "Question": {
+          "text": "把一樣的數連起來",
+          "RowData": [
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "8 x 8 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "80 x 8 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "800 x 8 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ],
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "64",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "640",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "6400",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ]
+          ]
+        },
+        "Answer": [
+          [
+            [0, 0],
+            [1, 0]
+          ],
+          [
+            [0, 1],
+            [1, 1]
+          ],
+          [
+            [0, 2],
+            [1, 2]
+          ]
+        ]
+      },
+      {
+        "Question": {
+          "text": "把一樣的數連起來",
+          "RowData": [
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "6 x 9 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "60 x 9 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "600 x 8 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ],
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "540",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "5400",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "54",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ]
+          ]
+        },
+        "Answer": [
+          [
+            [0, 0],
+            [1, 2]
+          ],
+          [
+            [0, 1],
+            [1, 0]
+          ],
+          [
+            [0, 2],
+            [1, 1]
+          ]
+        ]
+      },
+      {
+        "Question": {
+          "text": "把一樣的數連起來",
+          "RowData": [
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "5 x 4 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "50 x 4 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "500 x 4 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ],
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "20",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "2000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "200",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ]
+          ]
+        },
+        "Answer": [
+          [
+            [0, 0],
+            [1, 0]
+          ],
+          [
+            [0, 1],
+            [1, 2]
+          ],
+          [
+            [0, 2],
+            [1, 1]
+          ]
+        ]
+      },
+      {
+        "Question": {
+          "text": "把一樣的數連起來",
+          "RowData": [
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "6 x 5 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "60 x 5 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "600 x 5 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ],
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "300",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "3000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "30",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ]
+          ]
+        },
+        "Answer": [
+          [
+            [0, 0],
+            [1, 2]
+          ],
+          [
+            [0, 1],
+            [1, 0]
+          ],
+          [
+            [0, 2],
+            [1, 1]
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "Question": {
+          "text": "把一樣的數連起來",
+          "RowData": [
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "3000 x 9 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "3000 x 90 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "3000 x 900 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ],
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "270000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "27000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "2700000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ]
+          ]
+        },
+        "Answer": [
+          [
+            [0, 0],
+            [1, 1]
+          ],
+          [
+            [0, 1],
+            [1, 0]
+          ],
+          [
+            [0, 2],
+            [1, 2]
+          ]
+        ]
+      },
+      {
+        "Question": {
+          "text": "把一樣的數連起來",
+          "RowData": [
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "70 x 20 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "70 x 200 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "70 x 2000 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ],
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "140000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "1400",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "14000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ]
+          ]
+        },
+        "Answer": [
+          [
+            [0, 0],
+            [1, 1]
+          ],
+          [
+            [0, 1],
+            [1, 2]
+          ],
+          [
+            [0, 2],
+            [1, 0]
+          ]
+        ]
+      },
+      {
+        "Question": {
+          "text": "把一樣的數連起來",
+          "RowData": [
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "60 x 70 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "600 x 70 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "6000 x 700 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ],
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "4200000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "4200",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "42000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ]
+          ]
+        },
+        "Answer": [
+          [
+            [0, 0],
+            [1, 1]
+          ],
+          [
+            [0, 1],
+            [1, 2]
+          ],
+          [
+            [0, 2],
+            [1, 0]
+          ]
+        ]
+      },
+      {
+        "Question": {
+          "text": "把一樣的數連起來",
+          "RowData": [
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "50 x 30 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "500 x 30 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "5000 x 300 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ],
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "15000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "1500000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "1500",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ]
+          ]
+        },
+        "Answer": [
+          [
+            [0, 0],
+            [1, 2]
+          ],
+          [
+            [0, 1],
+            [1, 0]
+          ],
+          [
+            [0, 2],
+            [1, 1]
+          ]
+        ]
+      },
+      {
+        "Question": {
+          "text": "把一樣的數連起來",
+          "RowData": [
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "4000 x 6 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "4000 x 60 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "4000 x 600 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ],
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "2400000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "24000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "240000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ]
+          ]
+        },
+        "Answer": [
+          [
+            [0, 0],
+            [1, 1]
+          ],
+          [
+            [0, 1],
+            [1, 2]
+          ],
+          [
+            [0, 2],
+            [1, 0]
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "Question": {
+          "text": "把一樣的數連起來",
+          "RowData": [
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "12 x 500 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "120 x 500 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "1200 x 500 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ],
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "60000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "600000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "6000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ]
+          ]
+        },
+        "Answer": [
+          [
+            [0, 0],
+            [1, 2]
+          ],
+          [
+            [0, 1],
+            [1, 0]
+          ],
+          [
+            [0, 2],
+            [1, 1]
+          ]
+        ]
+      },
+      {
+        "Question": {
+          "text": "把一樣的數連起來",
+          "RowData": [
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "2500 x 40 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "2500 x 400 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "25000 x 400 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ],
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "10000000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "100000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "1000000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ]
+          ]
+        },
+        "Answer": [
+          [
+            [0, 0],
+            [1, 1]
+          ],
+          [
+            [0, 1],
+            [1, 2]
+          ],
+          [
+            [0, 2],
+            [1, 0]
+          ]
+        ]
+      },
+      {
+        "Question": {
+          "text": "把一樣的數連起來",
+          "RowData": [
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "21 x 300 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "210 x 300 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "2100 x 300 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ],
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "630000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "6300",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "63000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ]
+          ]
+        },
+        "Answer": [
+          [
+            [0, 0],
+            [1, 1]
+          ],
+          [
+            [0, 1],
+            [1, 2]
+          ],
+          [
+            [0, 2],
+            [1, 0]
+          ]
+        ]
+      },
+      {
+        "Question": {
+          "text": "把一樣的數連起來",
+          "RowData": [
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "1500 x 60 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "1500 x 600 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "15000 x 600 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ],
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "900000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "90000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "9000000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ]
+          ]
+        },
+        "Answer": [
+          [
+            [0, 0],
+            [1, 1]
+          ],
+          [
+            [0, 1],
+            [1, 0]
+          ],
+          [
+            [0, 2],
+            [1, 2]
+          ]
+        ]
+      },
+      {
+        "Question": {
+          "text": "把一樣的數連起來",
+          "RowData": [
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "25 x 800 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "250 x 800 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "2500 x 800 =",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ],
+            [
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "200000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "20000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              },
+              {
+                "Name": "TextOnly",
+                "Data": {
+                  "Text": "2000000",
+                  "Zhuyin": true,
+                  "Size": "title-large"
+                }
+              }
+            ]
+          ]
+        },
+        "Answer": [
+          [
+            [0, 0],
+            [1, 1]
+          ],
+          [
+            [0, 1],
+            [1, 0]
+          ],
+          [
+            [0, 2],
+            [1, 2]
+          ]
+        ]
+      }
+    ]
+  ]
+}
