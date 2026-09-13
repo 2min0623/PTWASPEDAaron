@@ -1,0 +1,281 @@
+{
+  "id": "MA4051",
+  "GameType": "TrueFalseGame",
+  "IntroText": {
+    "Type": "PlainText",
+    "Content": "想一想,再選選看"
+  },
+  "GameConfig": {},
+  "Questions": [
+    [
+      {
+        "Question": "3條邊都一樣長的三角形，叫做等腰三角形?",
+        "Answer": false,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "1-1.png",
+              "Alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "Question": "3條邊都一樣長的三角形，叫做等邊三角形?",
+        "Answer": true,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "1-1.png",
+              "Alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "Question": "3條邊都一樣長的三角形，叫做正三角形?",
+        "Answer": true,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "1-1.png",
+              "Alt": ""
+            }
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "Question": "等腰三角形的3條邊一樣長?",
+        "Answer": false,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "2-1.png",
+              "Alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "Question": "正三角形的3條邊一樣長?",
+        "Answer": true,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "2-2.png",
+              "Alt": ""
+            }
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "Question": "有兩條邊相等的三角形，叫做等邊三角形?",
+        "Answer": false,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "3-1.png",
+              "Alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "Question": "有兩條邊相等的三角形，叫做等腰三角形?",
+        "Answer": true,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "3-1.png",
+              "Alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "Question": "有兩條邊相等的三角形，叫做正三角形?",
+        "Answer": false,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "3-1.png",
+              "Alt": ""
+            }
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "Question": "等邊三角形有兩條一樣長的邊?",
+        "Answer": false,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "4-1.png",
+              "Alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "Question": "等腰三角形有兩條一樣長的邊?",
+        "Answer": true,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "4-2.png",
+              "Alt": ""
+            }
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "Question": "這是等腰三角形嗎?",
+        "Answer": false,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "5-1.png",
+              "Alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "Question": "這是正三角形嗎?",
+        "Answer": true,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "5-1.png",
+              "Alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "Question": "這是等腰三角形嗎?",
+        "Answer": false,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "5-2.png",
+              "Alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "Question": "這是正三角形嗎?",
+        "Answer": true,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "5-2.png",
+              "Alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "Question": "這是正三角形嗎?",
+        "Answer": false,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "5-3.png",
+              "Alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "Question": "這是等腰三角形嗎?",
+        "Answer": true,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "5-3.png",
+              "Alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "Question": "這是正三角形嗎?",
+        "Answer": false,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "5-4.png",
+              "Alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "Question": "這是等腰三角形嗎?",
+        "Answer": true,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "5-4.png",
+              "Alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "Question": "這是正三角形嗎?",
+        "Answer": false,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "5-5.png",
+              "Alt": ""
+            }
+          }
+        ]
+      },
+      {
+        "Question": "這是等腰三角形嗎?",
+        "Answer": true,
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "5-5.png",
+              "Alt": ""
+            }
+          }
+        ]
+      }
+    ]
+  ]
+}
