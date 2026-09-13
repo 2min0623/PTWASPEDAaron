@@ -1,0 +1,278 @@
+{
+  "id": "MA3052",
+  "GameType": "SelectGame",
+  "IntroText": {
+    "Type": "PlainText",
+    "Content": "看完影片，再回答問題"
+  },
+  "GameConfig": {
+    "GlobalTitle": "看完影片，再回答問題",
+    "RandomMode": true
+  },
+  "Hint": {
+    "ShowAs": "Single",
+    "Rule": {
+      "RuleType": "WrongTimes"
+    },
+    "Data": {
+      "MaxWrongTimes": 2,
+      "SourceType": "video",
+      "FilePath": "hint1.mp4"
+    }
+  },
+  "Questions": [
+    [
+      {
+        "Question": ["順時針方向旋轉", "逆時針方向旋轉"],
+        "Question_Text": "請選擇正確的旋轉方向",
+        "Answer": "順時針方向旋轉",
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "1.mov",
+              "Type": "video",
+              "Alt": "",
+              "Controls": false,
+              "Autoplay": true,
+              "Loop": true,
+              "Muted": false
+            }
+          }
+        ]
+      },
+      {
+        "Question": ["順時針方向旋轉", "逆時針方向旋轉"],
+        "Question_Text": "請選擇正確的旋轉方向",
+        "Answer": "逆時針方向旋轉",
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "2.mov",
+              "Type": "video",
+              "Alt": "",
+              "Controls": false,
+              "Autoplay": true,
+              "Loop": true,
+              "Muted": false
+            }
+          }
+        ]
+      },
+      {
+        "Question": ["順時針方向旋轉", "逆時針方向旋轉"],
+        "Question_Text": "請選擇正確的旋轉方向",
+        "Answer": "順時針方向旋轉",
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "3.mov",
+              "Type": "video",
+              "Alt": "",
+              "Controls": false,
+              "Autoplay": true,
+              "Loop": true,
+              "Muted": false
+            }
+          }
+        ]
+      },
+      {
+        "Question": ["順時針方向旋轉", "逆時針方向旋轉"],
+        "Question_Text": "請選擇正確的旋轉方向",
+        "Answer": "逆時針方向旋轉",
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "4.mov",
+              "Type": "video",
+              "Alt": "",
+              "Controls": false,
+              "Autoplay": true,
+              "Loop": true,
+              "Muted": false
+            }
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "Question": ["順時針方向旋轉", "逆時針方向旋轉"],
+        "Question_Text": "請選擇正確的旋轉方向",
+        "Answer": "順時針方向旋轉",
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "5.mov",
+              "Type": "video",
+              "Alt": "",
+              "Controls": false,
+              "Autoplay": true,
+              "Loop": true,
+              "Muted": false
+            }
+          }
+        ]
+      },
+      {
+        "Question": ["順時針方向旋轉", "逆時針方向旋轉"],
+        "Question_Text": "請選擇正確的旋轉方向",
+        "Answer": "順時針方向旋轉",
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "6.mov",
+              "Type": "video",
+              "Alt": "",
+              "Controls": false,
+              "Autoplay": true,
+              "Loop": true,
+              "Muted": false
+            }
+          }
+        ]
+      },
+      {
+        "Question": ["順時針方向旋轉", "逆時針方向旋轉"],
+        "Question_Text": "請選擇正確的旋轉方向",
+        "Answer": "逆時針方向旋轉",
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "7.mp4",
+              "Type": "video",
+              "Alt": "",
+              "Controls": false,
+              "Autoplay": true,
+              "Loop": true,
+              "Muted": false
+            }
+          }
+        ]
+      },
+      {
+        "Question": ["順時針方向旋轉", "逆時針方向旋轉"],
+        "Question_Text": "請選擇正確的旋轉方向",
+        "Answer": "順時針方向旋轉",
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "8.mov",
+              "Type": "video",
+              "Alt": "",
+              "Controls": false,
+              "Autoplay": true,
+              "Loop": true,
+              "Muted": false
+            }
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "Question": ["順時針方向旋轉", "逆時針方向旋轉"],
+        "Question_Text": "請選擇正確的旋轉方向",
+        "Answer": "順時針方向旋轉",
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "9.mov",
+              "Type": "video",
+              "Alt": "",
+              "Controls": false,
+              "Autoplay": true,
+              "Loop": true,
+              "Muted": false
+            }
+          }
+        ]
+      },
+      {
+        "Question": ["順時針方向旋轉", "逆時針方向旋轉"],
+        "Question_Text": "請選擇正確的旋轉方向",
+        "Answer": "逆時針方向旋轉",
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "10.mov",
+              "Type": "video",
+              "Alt": "",
+              "Controls": false,
+              "Autoplay": true,
+              "Loop": true,
+              "Muted": false
+            }
+          }
+        ]
+      },
+      {
+        "Question": ["順時針方向旋轉", "逆時針方向旋轉"],
+        "Question_Text": "請選擇正確的旋轉方向",
+        "Answer": "順時針方向旋轉",
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "11.mov",
+              "Type": "video",
+              "Alt": "",
+              "Controls": false,
+              "Autoplay": true,
+              "Loop": true,
+              "Muted": false
+            }
+          }
+        ]
+      },
+      {
+        "Question": ["順時針方向旋轉", "逆時針方向旋轉"],
+        "Question_Text": "請選擇正確的旋轉方向",
+        "Answer": "順時針方向旋轉",
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "12.mov",
+              "Type": "video",
+              "Alt": "",
+              "Controls": false,
+              "Autoplay": true,
+              "Loop": true,
+              "Muted": false
+            }
+          }
+        ]
+      },
+      {
+        "Question": ["順時針方向旋轉", "逆時針方向旋轉"],
+        "Question_Text": "請選擇正確的旋轉方向",
+        "Answer": "順時針方向旋轉",
+        "SlotComponents": [
+          {
+            "Name": "ImageContainer",
+            "Data": {
+              "Src": "13.mov",
+              "Type": "video",
+              "Alt": "",
+              "Controls": false,
+              "Autoplay": true,
+              "Loop": true,
+              "Muted": false
+            }
+          }
+        ]
+      }
+    ]
+  ]
+}
